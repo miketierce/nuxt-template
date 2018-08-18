@@ -2,7 +2,7 @@ import createPersistedState from 'vuex-persistedstate'
 
 export default ({store}) => {
   createPersistedState({
-    key: {{ name }},
+    key: '{{ name }}',
     paths: ['message']
   })(store)
 }

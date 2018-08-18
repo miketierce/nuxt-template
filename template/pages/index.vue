@@ -3,10 +3,10 @@
     <div>
       <app-logo/>
       <h1 class="title">
-        {{ name }}
+        test-2
       </h1>
       <h2 class="subtitle">
-        {{ description }}
+        A Nuxt.js project — {{ message }}
       </h2>
       <div class="links">
         <a
@@ -23,11 +23,22 @@
 </template>
 
 <script>
+import axios from 'axios'
 import AppLogo from '~/components/AppLogo.vue'
 
 export default {
   components: {
     AppLogo
+  },
+  data () {
+    return {
+      message: '<message from APIs>'
+    }
+  },
+  mounted () {
+    axios.get('/api/').then(({ data }) => {
+      this.message = data.message
+    })
   }
 }
 </script>
@@ -45,9 +56,10 @@ export default {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
   display: block;
   font-weight: 300;
-  font-size: 100px;
+  font-size: 5rem;
   color: #35495e;
   letter-spacing: 1px;
+  margin-top: 1rem;
 }
 
 .subtitle {
@@ -62,4 +74,3 @@ export default {
   padding-top: 15px;
 }
 </style>
-
