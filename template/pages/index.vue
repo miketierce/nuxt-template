@@ -6,7 +6,7 @@
         test-2
       </h1>
       <h2 class="subtitle">
-        A Nuxt.js project — {{ message }}
+        A Nuxt.js project — <span v-html="message"></span>
       </h2>
       <div class="links">
         <a
