@@ -52,11 +52,9 @@ $ npm run generate
 
 This template already include with :
 
-- Hot Reload with Backpack
+- Express Backpack
 - Bootstrap Vue
-- Axios
-- Example APIs
-- SASS / SCSS Loader (with sample)
-- Vuex Store
-- Vuex Persisted State
-- Assign number of PORT when Install
+- Axios & Example APIs
+- SASS / SCSS Loader
+- Vuex Store & Persisted State
+- Set Port on Install
