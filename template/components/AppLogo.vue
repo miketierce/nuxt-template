@@ -11,7 +11,7 @@
 .VueToNuxtLogo {
   display: inline-block;
   animation: turn 2s linear forwards 1s;
-  transform: rotateX(180deg);
+  transform: rotateX(180deg) scale(.8);
   position: relative;
   overflow: hidden;
   height: 180px;
@@ -77,4 +77,3 @@
   }
 }
 </style>
-
