@@ -8,21 +8,21 @@ module.exports = {
     name: {
       'type': 'string',
       'required': true,
-      'message': 'Project name'
+      'message': 'Project name :'
     },
     description: {
       'type': 'string',
       'required': false,
-      'message': 'Project description',
-      'default': 'Nuxt.js project'
+      'message': 'Project description :',
+      'default': 'A Nuxt.js project'
     },
     author: {
       'type': 'string',
-      'message': 'Author'
+      'message': 'Author :'
     },
     port: {
       'type': 'number',
-      'message': 'Which PORT this project will listen'
+      'message': 'Listening on Port :'
     },
   },
   completeMessage: '{{#inPlace}}To get started:\n\n  npm install # Or yarn\n  npm run dev{{else}}To get started:\n\n  cd {{destDirName}}\n  npm install # Or yarn\n  npm run dev{{/inPlace}}'
