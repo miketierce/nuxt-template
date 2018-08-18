@@ -1,8 +1,6 @@
-# Starter
+# Nuxt Template
 
 A [Nuxt.js](https://github.com/nuxt/nuxt.js) starter project template without the distraction of a complicated development environment.
-
-Live demo: https://starter.nuxtjs.org
 
 ## Prerequisites
 
@@ -13,8 +11,9 @@ Make sure to have `node 8.0+` and `npm 5.0+` installed
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 
 ``` bash
-$ vue init nuxt-community/starter-template my-project  
-$ cd my-project                     
+$ vue init muhibbudins/nuxt-template my-project  
+$ cd my-project
+
 # install dependencies
 $ npm install # Or yarn install
 ```
@@ -47,3 +46,15 @@ $ npm start
 $ npm run generate
 ```
 
+## Feature
+
+This template already include with :
+
+- Hot Reload with Backpack
+- Bootstrap Vue
+- Axios
+- Example APIs
+- SASS / SCSS Loader (with sample)
+- Vuex Store
+- Vuex Persisted State
+- Assign number of PORT when Install
