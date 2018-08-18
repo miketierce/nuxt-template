@@ -32,6 +32,12 @@ module.exports = {
     { src: '~/plugins/vuex.js', ssr: false }
   ],
   /*
+  ** Global Module
+  */
+  modules: [
+    'bootstrap-vue/nuxt'
+  ],
+  /*
   ** Build configuration
   */
   build: {
