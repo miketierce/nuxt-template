@@ -20,9 +20,20 @@ module.exports = {
     color: '#3B8070'
   },
   /*
+  ** Global CSS
+  */
+  css: [],
+  /*
+  ** Global Plugin
+  */
+  plugins: [
+    { src: '~/plugins/vuex.js', ssr: false }
+  ],
+  /*
   ** Build configuration
   */
   build: {
+    extractCSS: true,
     /*
     ** Run ESLint on save
     */
